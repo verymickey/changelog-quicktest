@@ -6,7 +6,7 @@
 ?					/folder/folder/file  (file path assumes you are in app)
 ?					line ### - Description of the edit
 ?
-? OMGCHANGE!
+? 
 
  
 08-09-2012
@@ -84,4 +84,8 @@
 	
 	/models/user.php
 	updated the validation to not allow funky symbols in usernames 
+	
+	
+15-09-2012
+	we are trying out the github thang
 	
