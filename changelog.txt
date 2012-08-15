@@ -1,0 +1,87 @@
+?
+?				THIS IS CHANGE LOG
+?				Log all changes in the following format
+?				
+?				DD-M M-YYYY
+?					/folder/folder/file  (file path assumes you are in app)
+?					line ### - Description of the edit
+?
+? OMGCHANGE!
+
+ 
+08-09-2012
+
+	/controllers/challenges_controller.php
+	function view() - Modified the query so that it is paginated
+
+	/view/challenges/view.ctp
+	Added pagination view elements for navigation
+
+	/view/elements/email/success.ctp
+	Commented out the line about Rank
+	
+	/controllers/leaderboards_controller.php
+	function leaders() - Modified the query so that it is capped
+	
+	
+09-09-2012
+
+	/controllers/challenges_controller.php
+	function view() - added a check for the logged in user so that user rating/liking/flagging works
+	added 'uses' so for Entry information
+	
+	/webroot/css/game.color.modcloth.css
+	removed reference to dark_title.gif (image is not used)
+	
+	/view/challenges/view.ctp
+	logged in actions were not wired and working, fixed
+	css for user actions was wonky fixed (in page css)
+	changed where the image is being pulled from /attachements/xxx.jpg -> /attachements/o/l/xxx.jpg
+	
+	/controllers/users_controller.php
+	function dashboard() - added AJAX call for userrank stuff
+	function userranktest() - ajax fucntion to return user rank 
+	
+	/view/challenges/view.ctp
+	added ajax call for userrank stuff
+	
+10-09-2012
+	
+	/app_controller.php
+	added debug_toolkit component
+	
+	/controllers/misc_controller.php
+	function index() - optimized calls
+	
+	/view/misc/admin_index.php
+	optimized code
+	fixed a bug showing wrong category counts
+	
+	/controller/leadersboards_controller.php
+	changed leaderboard integration ro use Rank model
+	
+	/view/leaderboards/leader.ctp
+	wired the leaderboard to the new Rank model data
+	
+	/controller/entries_controller.php
+	function grid() - created
+	
+	/view/entries/grid.ctp
+	created
+	
+	/controller/challenges_controller.php
+	function grid() - created
+	
+	/view/challenges/grid.ctp
+	created
+	
+	/controllers/users_controller.php
+	function dashboard() - removed unused databall calls
+	function view() - removed unused database calls
+	
+	
+12-09-2012
+	
+	/models/user.php
+	updated the validation to not allow funky symbols in usernames 
+	
